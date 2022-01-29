@@ -1,0 +1,42 @@
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer .contacts-icon a:hover {
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+footer .contacts-icon a {
+  font-size: 1.5rem;
+}
+
+footer .email {
+  width: 70%;
+  padding: 0.5rem;
+  background-color: #000;
+}
+
+footer .email input {
+  background: transparent;
+  border: 0;
+  color: #fff;
+}
+
+footer .email input:focus {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+footer .email .btn {
+  background-color: #fff;
+  border-radius: 0;
+}
+footer .email .btn i {
+  margin: auto;
+}
