@@ -1,52 +1,35 @@
-#footer {
-  border-radius: 25px 25px 0 0;
-  background-color: rgb(49, 49, 49) !important;
+#faq .ac {
+  border-radius: 10px;
 }
 
-footer a {
-  text-decoration: none;
+#faq .ac .ac-header {
+  padding: 1.3rem 0;
+  transition: 0.5s;
 }
 
-footer a:hover {
-  text-decoration: underline;
+#faq .ac .ac-header .ph-minus-bold {
+  opacity: 0;
+  display: none;
 }
 
-footer .contacts-icon a:hover {
-  opacity: 0.5;
-  text-decoration: none;
+#faq .ac .ac-trigger::after {
+  display: none;
 }
 
-footer .contacts-icon a {
-  font-size: 1.5rem;
+#faq .ac i {
+  font-size: 1.7rem;
+  font-weight: bolder;
 }
 
-footer .email {
-  width: 70%;
-  padding: 0.5rem;
-  background-color: #000;
+#faq .ac .ac-trigger {
+  margin-left: 0.5rem;
 }
 
-footer .email input {
-  background: transparent;
-  border: 0;
-  color: #fff;
+#faq .ac .ac-panel {
+  margin-left: 3.3rem;
 }
 
-footer .email input:focus {
-  background: transparent;
-  border: 1px solid #fff;
-  color: #fff;
-}
-
-footer .email .btn {
-  background-color: #fff;
-  border-radius: 0;
-}
-footer .email .btn i {
-  margin: auto;
-}
-
-#get-started {
+#get-started .bg-get-started {
   background-image: url("../img/bg-get-started.png");
   object-fit: cover;
   min-height: 45vh;
@@ -54,7 +37,8 @@ footer .email .btn i {
   border-bottom-right-radius: 25px;
   border-radius: 25px;
 }
-.test {
+
+#get-started .test {
   margin-top: 3rem;
   margin-left: 4rem;
   color: #fff;
@@ -62,7 +46,8 @@ footer .email .btn i {
   font-weight: bold;
   font-family: "Jost", sans-serif;
 }
-.start {
+
+#get-started .start {
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -72,19 +57,69 @@ footer .email .btn i {
   font-weight: bolder;
 }
 
-.bawah {
+#get-started .bawah {
   margin-top: 30px;
   color: #fff;
   margin-left: 4rem;
   font-size: 16px;
   font-family: "Jost", sans-serif;
 }
-.baju {
+
+#get-started .baju {
   margin-left: -9rem;
 }
-.twas3 {
+
+#get-started .twas3 {
   background-image: url("../img/bg_twas.png");
   object-fit: cover;
   background-repeat: no-repeat;
   background-position: 60px;
+}
+
+#footer {
+  border-radius: 25px 25px 0 0;
+  background-color: rgb(49, 49, 49) !important;
+}
+
+#footer a {
+  text-decoration: none;
+}
+
+#footer a:hover {
+  text-decoration: underline;
+}
+
+#footer .contacts-icon a:hover {
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+#footer .contacts-icon a {
+  font-size: 1.5rem;
+}
+
+#footer .email {
+  width: 70%;
+  padding: 0.5rem;
+  background-color: #000;
+}
+
+#footer .email input {
+  background: transparent;
+  border: 0;
+  color: #fff;
+}
+
+#footer .email input:focus {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+#footer .email .btn {
+  background-color: #fff;
+  border-radius: 0;
+}
+#footer .email .btn i {
+  margin: auto;
 }

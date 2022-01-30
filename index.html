@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
+    <!-- meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
     <link rel="stylesheet" href="assets/css/style.css" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet" />
+
+    <!-- Vendor -->
+    <link rel="stylesheet" href="assets/vendor/accordion-js/accordion.min.css" />
+    <script src="assets/vendor/accordion-js/accordion.min.js"></script>
 
     <script src="https://unpkg.com/phosphor-icons"></script>
 
@@ -21,22 +26,107 @@
   <body>
     <h1>TWAS</h1>
 
-    <div class="container mb-4">
-      <section id="get-started">
+    <section id="faq" class="mb-4">
+      <div class="container">
         <div class="row">
-          <div class="col-6 twas3">
-            <h3 class="test">Enough talk,lets make you handsome!</h3>
-            <p class="bawah">There are many variations of passages of lorem ipsum availables but the</p>
+          <div class="col-12 text-center mb-4">
+            <h2>Frequently Asked Questions</h2>
           </div>
-          <div class="col-3 baju">
-            <img src="assets/img/dvl_back.png" alt="baju" />
+          <div class="col-6">
+            <div class="accordion-container-1 user-select-none">
+              <div class="ac">
+                <div class="ac-header d-flex align-items-center">
+                  <i class="ph-plus-bold ms-3"></i>
+                  <i class="ph-minus-bold ms-3"></i>
+                  <h2 class="ac-trigger mt-1">Lorem ipsum dolor sit amet.</h2>
+                </div>
+                <div class="ac-panel">
+                  <p class="ac-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+              </div>
+
+              <div class="ac">
+                <div class="ac-header d-flex align-items-center">
+                  <i class="ph-plus-bold ms-3"></i>
+                  <i class="ph-minus-bold ms-3"></i>
+                  <h2 class="ac-trigger mt-1">Lorem ipsum dolor sit amet.</h2>
+                </div>
+                <div class="ac-panel">
+                  <p class="ac-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+              </div>
+
+              <div class="ac">
+                <div class="ac-header d-flex align-items-center">
+                  <i class="ph-plus-bold ms-3"></i>
+                  <i class="ph-minus-bold ms-3"></i>
+                  <h2 class="ac-trigger mt-1">Lorem ipsum dolor sit amet.</h2>
+                </div>
+                <div class="ac-panel">
+                  <p class="ac-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-3 start">
-            <button type="button" class="btn btn-light">Let's started</button>
+
+          <div class="col-6">
+            <div class="accordion-container-2 user-select-none">
+              <div class="ac">
+                <div class="ac-header d-flex align-items-center">
+                  <i class="ph-plus-bold ms-3"></i>
+                  <i class="ph-minus-bold ms-3"></i>
+                  <h2 class="ac-trigger mt-1">Lorem ipsum dolor sit amet.</h2>
+                </div>
+                <div class="ac-panel">
+                  <p class="ac-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+              </div>
+
+              <div class="ac">
+                <div class="ac-header d-flex align-items-center">
+                  <i class="ph-plus-bold ms-3"></i>
+                  <i class="ph-minus-bold ms-3"></i>
+                  <h2 class="ac-trigger mt-1">Lorem ipsum dolor sit amet.</h2>
+                </div>
+                <div class="ac-panel">
+                  <p class="ac-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+              </div>
+
+              <div class="ac">
+                <div class="ac-header d-flex align-items-center">
+                  <i class="ph-plus-bold ms-3"></i>
+                  <i class="ph-minus-bold ms-3"></i>
+                  <h2 class="ac-trigger mt-1">Lorem ipsum dolor sit amet.</h2>
+                </div>
+                <div class="ac-panel">
+                  <p class="ac-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
+
+    <section id="get-started" class="mb-4">
+      <div class="container">
+        <div class="bg-get-started">
+          <div class="row">
+            <div class="col-6 twas3">
+              <h3 class="test">Enough talk,lets make you handsome!</h3>
+              <p class="bawah">There are many variations of passages of lorem ipsum availables but the</p>
+            </div>
+            <div class="col-3 baju">
+              <img src="assets/img/dvl_back.png" alt="baju" />
+            </div>
+            <div class="col-3 start">
+              <button type="button" class="btn btn-light">Let's started</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <footer class="text-center text-lg-start bg-light text-muted" id="footer">
       <section class="p-4">
@@ -123,6 +213,8 @@
         </div>
       </section>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
