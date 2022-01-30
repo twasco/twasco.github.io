@@ -84,18 +84,18 @@
   box-shadow: none;
 }
 
-/*animasiflip*/
-#flip {
+/*animasihero*/
+#hero .wrapper {
   perspective: 1000px;
   width: 500px;
   height: 500px;
 }
 
-#flip .wrapper:hover .inner-wrapper {
+#hero .wrapper:hover .inner-wrapper {
   transform: rotateY(180deg);
 }
 
-#flip .inner-wrapper {
+#hero .inner-wrapper {
   position: relative;
   width: 100%;
   height: 100%;
@@ -103,7 +103,7 @@
   transform-style: preserve-3d;
 }
 
-#flip .depan,
+#hero .depan,
 .belakang {
   position: absolute;
   -webkit-backface-visibility: hidden;
@@ -112,7 +112,7 @@
   height: 500px;
 }
 
-#flip .belakang {
+#hero .belakang {
   transform: rotateY(180deg);
 }
 
