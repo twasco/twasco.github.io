@@ -116,6 +116,68 @@
   transform: rotateY(180deg);
 }
 
+/* Products Section Style */
+#products .we {
+  text-align: center;
+  font-family: "Jost", sans-serif;
+  font-weight: bolder;
+  margin-top: 3rem;
+}
+
+#products .launch {
+  text-align: center;
+  font-family: "Jost", sans-serif;
+}
+
+#products .premium {
+  text-align: left;
+  font-family: "Jost", sans-serif;
+  font-weight: bolder;
+  margin-top: 7rem;
+}
+
+#products .gosh {
+  font-family: "Jost", sans-serif;
+  text-align: left;
+}
+
+#products .baju2 {
+  background-image: url("Vector\ 133.png");
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: 220px;
+  background-position: 110px;
+  width: 362px;
+  height: 336px;
+  margin-top: 1rem;
+}
+
+#products .high {
+  text-align: left;
+  font-family: "Jost", sans-serif;
+  font-weight: bolder;
+  margin-top: 14rem;
+  margin-left: 12rem;
+}
+
+#products .hd {
+  text-align: left;
+  font-family: "Jost", sans-serif;
+  margin-left: 12rem;
+}
+
+#products .baju3 {
+  width: 362px;
+  height: 344px;
+  background-image: url("Vector\ 133.png");
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: 220px;
+  background-position: 100px;
+  margin-top: 6rem;
+  margin-left: -1rem;
+}
+
 /*Frequently Ask Questions style*/
 #faq .ac {
   border-radius: 10px;
