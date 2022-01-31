@@ -19,6 +19,10 @@
   color: #333a45;
 }
 
+#header ul li {
+  margin-right: 25px;
+}
+
 #header ul li a {
   margin-right: 10px;
   color: #333a45;
@@ -39,8 +43,8 @@
 
 /*Home Style*/
 #hero {
-  min-height: 88vh;
-  background-image: url("../img/Vector632.png");
+  min-height: 90vh;
+  background-image: url("../img/vector1.png");
 }
 
 #hero .mainHero {
@@ -117,6 +121,10 @@
 }
 
 /* Products Section Style */
+#products {
+  margin-top: 40px;
+}
+
 #products .we {
   text-align: center;
   font-family: "Jost", sans-serif;
@@ -142,7 +150,7 @@
 }
 
 #products .baju2 {
-  background-image: url("Vector\ 133.png");
+  background-image: url("../img/vector2.png");
   object-fit: cover;
   background-repeat: no-repeat;
   background-size: 220px;
@@ -169,7 +177,7 @@
 #products .baju3 {
   width: 362px;
   height: 344px;
-  background-image: url("Vector\ 133.png");
+  background-image: url("../img/vector2.png");
   object-fit: cover;
   background-repeat: no-repeat;
   background-size: 220px;
@@ -179,6 +187,16 @@
 }
 
 /*Frequently Ask Questions style*/
+#faq {
+  margin-top: 40px;
+  font-family: "Jost", sans-serif;
+}
+
+#faq-head {
+  font-weight: 600;
+  color: #f44c7f;
+}
+
 #faq .ac {
   border-radius: 10px;
 }
@@ -211,10 +229,15 @@
 }
 
 /*get started style*/
+
+#get-started {
+  margin-top: 60px;
+}
+
 #get-started .bg-get-started {
   background-image: url("../img/bg-get-started.png");
   object-fit: cover;
-  min-height: 45vh;
+  min-height: 280px;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   border-radius: 25px;
@@ -260,6 +283,7 @@
 
 /*footer style*/
 #footer {
+  margin-top: 60px;
   border-radius: 25px 25px 0 0;
   background-color: rgb(49, 49, 49) !important;
 }
