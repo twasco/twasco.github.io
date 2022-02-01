@@ -1,3 +1,4 @@
+// Accordion JS
 new Accordion([".accordion-container-1", ".accordion-container-2"], {
   duration: 400,
   triggerClass: "ac-header",
@@ -20,3 +21,6 @@ new Accordion([".accordion-container-1", ".accordion-container-2"], {
     minus.style.display = "none";
   },
 });
+
+// AOS
+AOS.init({ duration: 800, once: true });
