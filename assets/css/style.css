@@ -2,6 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+body {
+  overflow-x: hidden;
+}
+
 /*navbar style*/
 #header {
   padding: 30px;
@@ -72,7 +76,7 @@
   display: block;
   font-family: "Jost", sans-serif;
   font-weight: 700;
-  font-size: 70px;
+  font-size: 4rem;
   line-height: 80px;
   letter-spacing: -0.03em;
   color: #333a45;
@@ -96,10 +100,11 @@
 
 #hero .btn:hover {
   color: white;
+  background-color: #e73168;
 }
 
-.btn:focus,
-.btn:active {
+#hero .btn:focus,
+#hero .btn:active {
   outline: none !important;
   box-shadow: none;
 }
@@ -109,6 +114,8 @@
   perspective: 1000px;
   width: 500px;
   height: 500px;
+  z-index: 10;
+  position: relative;
 }
 
 #hero .wrapper:hover .inner-wrapper {
@@ -116,90 +123,76 @@
 }
 
 #hero .inner-wrapper {
-  position: relative;
   width: 100%;
-  height: 100%;
-  transition: transform 0.9s;
+  transition: transform 0.8s;
   transform-style: preserve-3d;
 }
 
 #hero .depan,
-.belakang {
+#hero .belakang {
   position: absolute;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  width: 500px;
-  height: 500px;
+  width: 100%;
 }
 
 #hero .belakang {
+  position: absolute;
   transform: rotateY(180deg);
 }
 
 /* Products Section Style */
 #products {
-  margin-top: 40px;
+  margin-top: 3rem;
 }
 
-#products .we {
+#products .comp {
+  padding: 0 4rem 0 4rem;
+}
+
+#products .comp-header {
   text-align: center;
   font-family: "Jost", sans-serif;
   font-weight: bolder;
   margin-top: 3rem;
 }
 
-#products .launch {
+#products .comp-desc {
   text-align: center;
   font-family: "Jost", sans-serif;
 }
 
-#products .premium {
-  text-align: left;
-  font-family: "Jost", sans-serif;
-  font-weight: bolder;
-  margin-top: 7rem;
+#products .product-strength-1,
+#products .product-strength-2 {
+  padding: 0 4rem 0 4rem;
 }
 
-#products .gosh {
+#products .desc {
   font-family: "Jost", sans-serif;
   text-align: left;
+}
+
+#products .baju2,
+#products .baju3 {
+  width: 100%;
+  object-fit: cover;
+  background-repeat: no-repeat;
 }
 
 #products .baju2 {
   background-image: url("../img/vector2.png");
-  object-fit: cover;
-  background-repeat: no-repeat;
-  background-size: 220px;
-  background-position: 110px;
-  width: 362px;
-  height: 336px;
-  margin-top: 1rem;
-}
-
-#products .high {
-  text-align: left;
-  font-family: "Jost", sans-serif;
-  font-weight: bolder;
-  margin-top: 14rem;
-  margin-left: 12rem;
-}
-
-#products .hd {
-  text-align: left;
-  font-family: "Jost", sans-serif;
-  margin-left: 12rem;
+  background-position: right center;
 }
 
 #products .baju3 {
-  width: 362px;
-  height: 344px;
-  background-image: url("../img/vector2.png");
-  object-fit: cover;
-  background-repeat: no-repeat;
-  background-size: 220px;
-  background-position: 100px;
-  margin-top: 6rem;
-  margin-left: -1rem;
+  background-image: url("../img/vector3.png");
+  background-position: left center;
+}
+
+#products .title {
+  text-align: left;
+  font-family: "Jost", sans-serif;
+  font-weight: bolder;
 }
 
 /*Frequently Ask Questions style*/
@@ -245,13 +238,13 @@
 }
 
 /*get started style*/
-
 #get-started {
   margin-top: 60px;
 }
 
 #get-started .bg-get-started {
   background-image: url("../img/bg-get-started.png");
+  background-repeat: no-repeat;
   object-fit: cover;
   min-height: 280px;
   border-top-right-radius: 25px;
