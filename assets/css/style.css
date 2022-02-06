@@ -33,8 +33,23 @@
   font-weight: 800;
 }
 
-#header .act:hover {
+/* #header ul li a {
+  animation: slideInLeft;
+  animation-duration: 0.5s;
+} */
+
+/*#header ul li a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #000;
+  transition: width 0.3s;
+} */
+
+#header ul li a:hover::after {
   color: #f44c7f;
+  border-bottom: 0.3rem solid #f44c7f;
 }
 
 #header .translate {
@@ -43,8 +58,9 @@
 
 /*Home Style*/
 #hero {
-  min-height: 90vh;
+  min-height: 100vh;
   background-image: url("../img/vector1.png");
+  background-repeat: no-repeat;
 }
 
 #hero .mainHero {
@@ -193,7 +209,7 @@
 }
 
 #faq-head {
-  font-weight: 600;
+  font-weight: 800;
   color: #f44c7f;
 }
 
@@ -285,7 +301,8 @@
 #footer {
   margin-top: 60px;
   border-radius: 25px 25px 0 0;
-  background-color: rgb(49, 49, 49) !important;
+  background-color: #b6b6b6 !important;
+  color: #333a45 !important;
 }
 
 #footer a {
@@ -308,19 +325,19 @@
 #footer .email {
   width: 70%;
   padding: 0.5rem;
-  background-color: #000;
+  background-color: #333a45;
 }
 
 #footer .email input {
   background: transparent;
   border: 0;
-  color: #fff;
+  color: #fff !important;
 }
 
 #footer .email input:focus {
   background: transparent;
   border: 1px solid #fff;
-  color: #fff;
+  color: #000;
 }
 
 #footer .email .btn {
@@ -329,4 +346,23 @@
 }
 #footer .email .btn i {
   margin: auto;
+}
+
+#footer .form-control:focus,
+.form-control:active {
+  outline: none !important;
+  box-shadow: none;
+  border: none !important;
+}
+
+::placeholder {
+  color: #fff !important;
+}
+
+:-ms-input-placeholder {
+  color: #fff !important;
+}
+
+::-ms-input-placeholder {
+  color: #fff !important;
 }
