@@ -19,41 +19,24 @@ body {
   font-weight: 500;
 }
 
-#header a:hover {
-  color: #333a45;
-}
-
 #header ul li {
   margin-right: 25px;
 }
 
 #header ul li a {
+  display: inline-block;
   margin-right: 10px;
   color: #333a45;
+  transition: all 0.3s;
 }
 
-#header .act {
+#header ul li a:hover {
+  color: #f44c7f;
+}
+
+#header .active {
   color: #f44c7f;
   font-weight: 800;
-}
-
-/* #header ul li a {
-  animation: slideInLeft;
-  animation-duration: 0.5s;
-} */
-
-/*#header ul li a::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 2px;
-  background: #000;
-  transition: width 0.3s;
-} */
-
-#header ul li a:hover::after {
-  color: #f44c7f;
-  border-bottom: 0.3rem solid #f44c7f;
 }
 
 #header .translate {
@@ -65,6 +48,7 @@ body {
   min-height: 100vh;
   background-image: url("../img/vector1.png");
   background-repeat: no-repeat;
+  background-size: 100% auto;
 }
 
 #hero .mainHero {
@@ -358,4 +342,45 @@ body {
 
 ::-ms-input-placeholder {
   color: #fff !important;
+}
+
+/* Magicline */
+.magic-line-menu,
+.magic-line-inner,
+.magic-line-inner ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.magic-line-inner ul {
+  list-style: none;
+}
+
+.magic-line-menu a {
+  font-weight: 700;
+  color: #f44c7f;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px 20px;
+  display: block;
+}
+
+.magic-line {
+  border-radius: 4px;
+  background: #f44c7f;
+}
+
+.init-magic-line,
+.magic-line-inner {
+  position: relative;
+}
+
+.magic-line {
+  z-index: -1;
+  position: absolute;
+}
+
+.magic-line-css-transition {
+  transition: all 0.2s ease-in-out;
 }

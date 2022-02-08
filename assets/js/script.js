@@ -1,3 +1,13 @@
+const navLinks = document.querySelectorAll(".nav-link");
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    const activeLink = document.querySelector(".act");
+    activeLink.classList.remove("act");
+    link.classList.add("act");
+  });
+});
+
 // Accordion JS
 new Accordion([".accordion-container-1", ".accordion-container-2"], {
   duration: 400,
@@ -6,8 +16,6 @@ new Accordion([".accordion-container-1", ".accordion-container-2"], {
     const minus = document.querySelector("#" + currElement.id + " .ph-minus-bold");
     const plus = document.querySelector("#" + currElement.id + " .ph-plus-bold");
 
-    plus.style.opacity = "0";
-    minus.style.opacity = "1";
     plus.style.display = "none";
     minus.style.display = "block";
   },
@@ -15,8 +23,6 @@ new Accordion([".accordion-container-1", ".accordion-container-2"], {
     const minus = document.querySelector("#" + currElement.id + " .ph-minus-bold");
     const plus = document.querySelector("#" + currElement.id + " .ph-plus-bold");
 
-    plus.style.opacity = "1";
-    minus.style.opacity = "0";
     plus.style.display = "block";
     minus.style.display = "none";
   },
@@ -24,3 +30,19 @@ new Accordion([".accordion-container-1", ".accordion-container-2"], {
 
 // AOS
 AOS.init({ duration: 800, once: true });
+
+// Magicline
+var myMagicLine = new magicLine(document.querySelectorAll(".navbar"), {
+  mode: "line",
+  lineStrength: 3,
+  animationCallback: function (el, params) {
+    anime({
+      targets: el,
+      left: params.left,
+      top: params.top,
+      width: params.width,
+      height: params.height,
+    });
+  },
+});
+myMagicLine.init();
