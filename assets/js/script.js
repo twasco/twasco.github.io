@@ -10,21 +10,25 @@ navLinks.forEach((link) => {
 
 // Accordion JS
 new Accordion([".accordion-container-1", ".accordion-container-2"], {
-  duration: 400,
+  duration: 500,
   triggerClass: "ac-header",
-  onOpen: function onOpen(currElement) {
+  beforeOpen: (currElement) => {
     const minus = document.querySelector("#" + currElement.id + " .ph-minus-bold");
     const plus = document.querySelector("#" + currElement.id + " .ph-plus-bold");
 
-    plus.style.display = "none";
-    minus.style.display = "block";
+    plus.style.opacity = "0";
+    minus.style.opacity = "1";
+    plus.style.visibility = "none";
+    minus.style.visibility = "visible";
   },
-  onClose: function onClose(currElement) {
+  beforeClose: (currElement) => {
     const minus = document.querySelector("#" + currElement.id + " .ph-minus-bold");
     const plus = document.querySelector("#" + currElement.id + " .ph-plus-bold");
 
-    plus.style.display = "block";
-    minus.style.display = "none";
+    plus.style.opacity = "1";
+    minus.style.opacity = "0";
+    plus.style.visibility = "visible";
+    minus.style.visibility = "none";
   },
 });
 

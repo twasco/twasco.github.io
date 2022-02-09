@@ -46,7 +46,7 @@ body {
 /*Home Style*/
 #hero {
   min-height: 100vh;
-  background-image: url("../img/vector1.png");
+  background-image: url("../img/vector1.webp");
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
@@ -164,12 +164,12 @@ body {
 }
 
 #products .baju2 {
-  background-image: url("../img/vector2.png");
+  background-image: url("../img/vector2.webp");
   background-position: right center;
 }
 
 #products .baju3 {
-  background-image: url("../img/vector3.png");
+  background-image: url("../img/vector3.webp");
   background-position: left center;
 }
 
@@ -196,12 +196,22 @@ body {
 
 #faq .ac .ac-header {
   padding: 1.3rem 0;
-  transition: 0.5s;
+}
+
+#faq .ac .ac-header .plus-minus {
+  height: 20px;
+  width: 20px;
+  margin-top: -0.5rem;
+}
+
+#faq .ac .ac-header .ph-plus-bold {
+  transition: all 0.5s;
 }
 
 #faq .ac .ac-header .ph-minus-bold {
   opacity: 0;
-  display: none;
+  visibility: none;
+  transition: all 0.5s;
 }
 
 #faq .ac .ac-trigger::after {
@@ -268,7 +278,7 @@ body {
 }
 
 #get-started .twas3 {
-  background-image: url("../img/bg_twas.png");
+  background-image: url("../img/bg_twas.webp");
   object-fit: cover;
   background-repeat: no-repeat;
   background-position: 60px;
@@ -300,9 +310,10 @@ body {
 }
 
 #footer .email {
+  border-radius: 25px;
   width: 70%;
-  padding: 0.5rem;
-  background-color: #333a45;
+  padding: 0.7rem;
+  background: linear-gradient(90deg, rgba(182, 182, 182, 1) 0%, rgba(182, 182, 182, 1) 44%, rgba(51, 58, 69, 1) 100%);
 }
 
 #footer .email input {
@@ -318,7 +329,10 @@ body {
 }
 
 #footer .email .btn {
-  background-color: #fff;
+  color: #fff !important;
+  padding: 5px 20px;
+  border-radius: 20px !important;
+  background-color: #b6b6b6;
   border-radius: 0;
 }
 #footer .email .btn i {
