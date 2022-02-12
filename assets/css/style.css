@@ -174,14 +174,14 @@ body {
   padding: 0 4rem 0 4rem;
 }
 
-#products .comp-header {
+#products .comp .comp-header {
   text-align: center;
   font-family: "Jost", sans-serif;
   font-weight: bolder;
   margin-top: 3rem;
 }
 
-#products .comp-desc {
+#products .comp .comp-desc {
   text-align: center;
   font-family: "Jost", sans-serif;
 }
@@ -196,25 +196,25 @@ body {
   text-align: left;
 }
 
-#products .baju2,
-#products .baju3 {
+#products .product-strength-1 .kiri .baju-depan,
+#products .product-strength-2 .kanan .baju-belakang {
   width: 100%;
   object-fit: cover;
   background-repeat: no-repeat;
+  background-size: 50%;
 }
 
-#products .baju2 {
+#products .product-strength-1 .kiri .baju-depan {
   background-image: url("../img/vector2.webp");
   background-position: right center;
 }
 
-#products .baju3 {
+#products .product-strength-2 .kanan .baju-belakang {
   background-image: url("../img/vector3.webp");
   background-position: left center;
 }
 
 #products .title {
-  text-align: left;
   font-family: "Jost", sans-serif;
   font-weight: bolder;
 }
