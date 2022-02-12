@@ -7,7 +7,7 @@ body {
 }
 
 * {
-  transition: background-color 0.7s, color 0.2s;
+  transition: background-color 0.7s, color 0.1s;
 }
 
 .dark {
@@ -277,35 +277,32 @@ body {
 }
 
 #get-started .bg-get-started {
-  background-image: url("../img/bg-get-started.png");
+  background-color: #f44c7f;
+  background-image: url("/assets/img/bg_twas.webp"), url("/assets/img/dvl_back.webp"), url("/assets/img/vector-get-started-1.webp"), url("/assets/img/vector-get-started-2.webp"), url("/assets/img/vector-get-started-3.webp");
   background-repeat: no-repeat;
-  object-fit: cover;
-  min-height: 280px;
-  border-top-right-radius: 25px;
-  border-bottom-right-radius: 25px;
+  background-position: 10% center, 80% 45%, -3% -40%, 95% -15%, 80% 140%;
+  background-size: 40%, 50%, 10%, 10%, 10%;
+  height: 280px;
   border-radius: 25px;
 }
 
-#get-started .test {
+#get-started .kiri {
+  /* background-image: url("../img/bg_twas.webp"); */
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: 60px;
+}
+
+#get-started .kiri .header {
   margin-top: 3rem;
   margin-left: 4rem;
   color: #fff;
-  font-size: 40px;
+  font-size: 2rem;
   font-weight: bold;
   font-family: "Jost", sans-serif;
 }
 
-#get-started .start {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  margin-bottom: 4rem;
-  margin-left: 9rem;
-  font-family: "Jost", sans-serif;
-  font-weight: bolder;
-}
-
-#get-started .bawah {
+#get-started .kiri .text {
   margin-top: 30px;
   color: #fff;
   margin-left: 4rem;
@@ -313,15 +310,39 @@ body {
   font-family: "Jost", sans-serif;
 }
 
-#get-started .baju {
-  margin-left: -9rem;
+#get-started .kanan {
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  /* background-image: url("../img/dvl_back.webp");
+  background-repeat: no-repeat;
+  background-position: -5rem 40%;
+  background-size: cover; */
 }
 
-#get-started .twas3 {
-  background-image: url("../img/bg_twas.webp");
-  object-fit: cover;
-  background-repeat: no-repeat;
-  background-position: 60px;
+#get-started .kanan .btn-started {
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+}
+
+@media (max-width: 991px) {
+  #get-started .bg-get-started {
+    margin: 0 1rem 0 1rem;
+    height: 75vh;
+    background-color: #f44c7f;
+    background-image: url("/assets/img/bg_twas.webp"), url("/assets/img/dvl_back.webp"), url("/assets/img/vector-get-started-1.webp"), url("/assets/img/vector-get-started-2.webp"), url("/assets/img/vector-get-started-3.webp");
+    background-repeat: no-repeat;
+    background-position: center 20%, 50% 120%, -3% -25%, 120% 40%, center 125%;
+    background-size: 70%, 90%, 30%, 30%, 30%;
+    border-radius: 25px;
+  }
+
+  #get-started .kanan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /*footer style*/
