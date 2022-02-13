@@ -133,36 +133,93 @@ body {
   box-shadow: none;
 }
 
-/*animasihero*/
-#hero .wrapper {
-  perspective: 1000px;
-  width: 500px;
-  height: 500px;
-  z-index: 10;
+/*animasi hero*/
+#hero .kanan {
   position: relative;
 }
+#hero .kanan .invisible {
+  width: 100%;
+}
 
-#hero .wrapper:hover .inner-wrapper {
+#hero .kanan .wrapper {
+  width: 100%;
+  height: 100%;
+  perspective: 1000px;
+  z-index: 10;
+}
+
+#hero .kanan .wrapper:hover .inner-wrapper {
   transform: rotateY(180deg);
 }
 
-#hero .inner-wrapper {
+#hero .kanan .inner-wrapper {
+  height: 100%;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
 }
 
-#hero .depan,
-#hero .belakang {
+#hero .kanan .depan,
+#hero .kanan .belakang {
   position: absolute;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  width: 100%;
+  height: 100%;
 }
 
-#hero .belakang {
-  position: absolute;
+#hero .kanan .belakang {
   transform: rotateY(180deg);
+}
+
+@media (max-width: 991px) {
+  #hero {
+    background-size: 160%;
+    background-position: top center;
+  }
+
+  #hero .mainHero {
+    margin: 0;
+  }
+
+  #hero .mainHero span {
+    display: inline;
+    font-family: "Jost", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: normal;
+    letter-spacing: -0.03em;
+  }
+
+  #hero .mainHero p {
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    max-width: 100%;
+  }
+
+  #hero .mainHero .btn-bg {
+    width: 100%;
+    height: 50px;
+  }
+
+  #get-started .bg-get-started {
+    margin: 0 1rem 0 1rem;
+    height: 75vh;
+    background-color: #f44c7f;
+    background-image: url("/assets/img/bg_twas.webp"), url("/assets/img/dvl_back.webp"), url("/assets/img/vector-get-started-1.webp"), url("/assets/img/vector-get-started-2.webp"), url("/assets/img/vector-get-started-3.webp");
+    background-repeat: no-repeat;
+    background-position: center 20%, 50% 120%, -3% -25%, 120% 40%, center 125%;
+    background-size: 70%, 90%, 30%, 30%, 30%;
+    border-radius: 25px;
+  }
+
+  #get-started .kanan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /* Products Section Style */
@@ -324,25 +381,6 @@ body {
 #get-started .kanan .btn-started {
   margin-bottom: 2rem;
   margin-right: 2rem;
-}
-
-@media (max-width: 991px) {
-  #get-started .bg-get-started {
-    margin: 0 1rem 0 1rem;
-    height: 75vh;
-    background-color: #f44c7f;
-    background-image: url("/assets/img/bg_twas.webp"), url("/assets/img/dvl_back.webp"), url("/assets/img/vector-get-started-1.webp"), url("/assets/img/vector-get-started-2.webp"), url("/assets/img/vector-get-started-3.webp");
-    background-repeat: no-repeat;
-    background-position: center 20%, 50% 120%, -3% -25%, 120% 40%, center 125%;
-    background-size: 70%, 90%, 30%, 30%, 30%;
-    border-radius: 25px;
-  }
-
-  #get-started .kanan {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 }
 
 /*footer style*/
