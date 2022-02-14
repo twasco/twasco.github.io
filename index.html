@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="assets/vendor/accordion-js/accordion.min.css" />
     <script src="assets/vendor/accordion-js/accordion.min.js"></script>
 
-    <link rel="stylesheet" href="assets/vendor/aos/aos.css" />
-    <script src="assets/vendor/aos/aos.js"></script>
+    <!-- <link rel="stylesheet" href="assets/vendor/aos/aos.css" />
+    <script src="assets/vendor/aos/aos.js"></script> -->
 
     <script src="assets/vendor/anime-js/anime.min.js"></script>
 
@@ -36,13 +36,13 @@
     <title>TWAS</title>
   </head>
   <body class="light">
-    <div class="container-fluid">
-      <header id="header" class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
+    <div class="container-fluid position-relative">
+      <nav id="navbar" class="d-flex flex-wrap align-items-center justify-content-between position-relative py-3 mb-4">
         <a href="#" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
           <img class="logo" src="assets/img/twas-dark.webp" alt="TWAS" width="79" height="20" />
         </a>
 
-        <div class="navbar">
+        <div class="nav-menu">
           <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
             <li>
               <a href="#" class="px-2 active nav-link">home</a>
@@ -53,13 +53,20 @@
           </ul>
         </div>
 
-        <div class="col-md-3 d-flex justify-content-end">
-          <a href="#" class="px-2 link-dark translate">EN</a>
-          <div class="form-check form-switch">
-            <input class="form-check-input d-flex justify-content-end" type="checkbox" role="switch" id="switchTheme" />
+        <div class="col-md-3 d-flex justify-content-end align-items-center">
+          <a href="#" class="link-dark translate">EN</a>
+          <button class="btn pt-2 darkmode-toggle">
+            <i class="ph-moon-bold mt-1 position-absolute"></i>
+            <i class="ph-sun-bold mt-1"></i>
+          </button>
+          <div class="menu d-flex justify-content-center align-items-center position-relative">
+            <input id="menu_toggle" type="checkbox" />
+            <label class="menu_btn" for="menu_toggle">
+              <span></span>
+            </label>
           </div>
         </div>
-      </header>
+      </nav>
     </div>
 
     <section id="hero">
@@ -81,9 +88,9 @@
               <div class="inner-wrapper">
                 <img src="assets/img/dvl_front.webp" alt="Baju Depan" class="depan" />
                 <img src="assets/img/dvl_back.webp" alt="Baju Belakang" class="belakang" />
+                <img src="assets/img/dvl_front.webp" alt="Baju Depan" class="invisible" />
               </div>
             </div>
-            <img src="assets/img/dvl_front.webp" alt="Baju Depan" class="invisible" />
           </div>
         </div>
       </div>

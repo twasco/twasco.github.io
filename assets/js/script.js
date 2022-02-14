@@ -19,10 +19,10 @@ new Accordion([".accordion-container-1", ".accordion-container-2"], {
 });
 
 // AOS
-AOS.init({ duration: 800, once: true });
+// AOS.init({ duration: 800, once: true });
 
 // Magicline
-var myMagicLine = new magicLine(document.querySelectorAll(".navbar"), {
+var myMagicLine = new magicLine(document.querySelectorAll(".nav-menu"), {
   mode: "line",
   lineStrength: 3,
   animationCallback: function (el, params) {
@@ -47,20 +47,38 @@ navLinks.forEach((link) => {
   });
 });
 
-const switchTheme = document.querySelector("#switchTheme");
+const darkmodeToggle = document.querySelector(".darkmode-toggle");
 const logo = document.querySelectorAll(".logo");
+const iconDarkmode = document.querySelectorAll(".darkmode-toggle i");
 
-switchTheme.addEventListener("click", (e) => {
+darkmodeToggle.addEventListener("click", () => {
   document.body.classList.toggle("dark");
   document.body.classList.toggle("light");
 
   if (document.body.classList.contains("dark")) {
+    iconDarkmode[0].style.opacity = 0;
+    iconDarkmode[1].style.opacity = 1;
     for (i = 0; i < logo.length; i++) {
       logo[i].src = "assets/img/twas-light.webp";
     }
   } else {
+    iconDarkmode[1].style.opacity = 0;
+    iconDarkmode[0].style.opacity = 1;
     for (i = 0; i < logo.length; i++) {
       logo[i].src = "assets/img/twas-dark.webp";
     }
+  }
+});
+
+const responsiveToggle = document.getElementById("menu_toggle");
+const navMenu = document.querySelector(".nav-menu");
+
+console.log(navMenu);
+
+responsiveToggle.addEventListener("change", (e) => {
+  if (responsiveToggle.checked) {
+    navMenu.classList.add("active");
+  } else {
+    navMenu.classList.remove("active");
   }
 });
