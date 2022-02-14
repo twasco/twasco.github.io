@@ -2,8 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+.all-wrapper,
+html,
 body {
   overflow-x: hidden;
+  max-width: 100vw;
 }
 
 .btn:focus,
@@ -22,6 +25,7 @@ body {
 }
 
 .dark,
+.dark #navbar,
 .dark #navbar .nav-menu .nav {
   background-color: #333a45;
 }
@@ -59,6 +63,7 @@ body {
 }
 
 .light,
+.light #navbar,
 .light #navbar .nav-menu .nav {
   background-color: #fff;
 }
@@ -89,8 +94,12 @@ body {
 
 /*navbar style*/
 #navbar {
-  padding: 30px;
   font-family: "Jost", sans-serif;
+  z-index: 500;
+}
+
+#navbar .nav-navbar {
+  height: 10vh;
 }
 
 #navbar a {
@@ -153,6 +162,7 @@ body {
 #navbar .menu {
   width: 30px;
   height: 30px;
+  display: none !important;
 }
 
 #navbar .menu_btn {
@@ -186,6 +196,7 @@ body {
 
 /*Home Style*/
 #hero {
+  margin-top: 12vh;
   min-height: 100vh;
   background-image: url("../img/vector1.webp");
   background-repeat: no-repeat;
@@ -535,6 +546,10 @@ body {
     z-index: 200;
   }
 
+  #navbar .nav-navbar {
+    padding: 0 !important;
+  }
+
   #navbar .nav-menu {
     transition: all 0.7s;
     height: 100%;
@@ -547,12 +562,18 @@ body {
     top: 0;
   }
 
+  #navbar .menu {
+    margin-left: -1rem;
+    display: inline-block !important;
+  }
+
   #navbar .nav-menu .nav {
+    width: 110%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 15% 0 5% 0;
+    padding: 15% 0 0 10%;
     opacity: 0.9;
   }
 
@@ -560,7 +581,7 @@ body {
     min-height: 100%;
     background-size: 160%;
     background-position: top center;
-    margin: 0;
+    margin: 10vh 0 0 0;
   }
 
   #hero .mainHero {
