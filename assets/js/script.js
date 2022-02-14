@@ -19,7 +19,7 @@ new Accordion([".accordion-container-1", ".accordion-container-2"], {
 });
 
 // AOS
-// AOS.init({ duration: 800, once: true });
+AOS.init({ duration: 800, once: true });
 
 // Magicline
 var myMagicLine = new magicLine(document.querySelectorAll(".nav-menu"), {
@@ -40,7 +40,7 @@ myMagicLine.init();
 const navLinks = document.querySelectorAll(".nav-link");
 
 navLinks.forEach((link) => {
-  link.addEventListener("click", (e) => {
+  link.addEventListener("click", () => {
     const activeLink = document.querySelector(".act");
     activeLink.classList.remove("act");
     link.classList.add("act");
@@ -72,8 +72,6 @@ darkmodeToggle.addEventListener("click", () => {
 
 const responsiveToggle = document.getElementById("menu_toggle");
 const navMenu = document.querySelector(".nav-menu");
-
-console.log(navMenu);
 
 responsiveToggle.addEventListener("change", (e) => {
   if (responsiveToggle.checked) {
