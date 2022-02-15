@@ -649,7 +649,7 @@ body {
 
   #get-started .bg-get-started {
     margin: 0 1rem 0 1rem;
-    min-height: 75vh;
+    min-height: 100%;
     background-color: #f44c7f;
     background-image: url("/assets/img/bg_twas.webp"),
       url("/assets/img/dvl_back.webp"),
