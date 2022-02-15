@@ -25,9 +25,8 @@ body {
 }
 
 .dark,
-.dark #navbar,
-.dark #navbar .nav-menu .nav {
-  background-color: #333a45;
+.dark #navbar {
+  background-color: rgba(51, 58, 69, 0.7);
 }
 
 .dark,
@@ -63,9 +62,8 @@ body {
 }
 
 .light,
-.light #navbar,
-.light #navbar .nav-menu .nav {
-  background-color: #fff;
+.light #navbar {
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 .light,
@@ -294,6 +292,7 @@ body {
 }
 
 #products .comp .comp-desc {
+  padding: 0 5rem 0 5rem;
   text-align: center;
   font-family: "Jost", sans-serif;
 }
@@ -384,7 +383,11 @@ body {
 
 #get-started .bg-get-started {
   background-color: #f44c7f;
-  background-image: url("/assets/img/bg_twas.webp"), url("/assets/img/dvl_back.webp"), url("/assets/img/vector-get-started-1.webp"), url("/assets/img/vector-get-started-2.webp"), url("/assets/img/vector-get-started-3.webp");
+  background-image: url("/assets/img/bg_twas.webp"),
+    url("/assets/img/dvl_back.webp"),
+    url("/assets/img/vector-get-started-1.webp"),
+    url("/assets/img/vector-get-started-2.webp"),
+    url("/assets/img/vector-get-started-3.webp");
   background-repeat: no-repeat;
   background-position: 10% center, 80% 45%, top left, 95% -15%, 80% 140%;
   background-size: 40%, 50%, 10%, 10%, 10%;
@@ -454,7 +457,12 @@ body {
   border-radius: 25px;
   width: 70%;
   padding: 0.7rem;
-  background: linear-gradient(90deg, rgb(228, 228, 228, 1) 0%, rgb(228, 228, 228, 1) 44%, rgba(51, 58, 69, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgb(228, 228, 228, 1) 0%,
+    rgb(228, 228, 228, 1) 44%,
+    rgba(51, 58, 69, 1) 100%
+  );
 }
 
 #footer .email input {
@@ -541,9 +549,21 @@ body {
 }
 
 @media (max-width: 991px) {
+  .dark #navbar .nav-menu .nav {
+    background-color: rgba(51, 58, 69, 0.7);
+  }
+
+  .light #navbar .nav-menu .nav {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+
   #navbar {
-    padding: 0 1rem 0 1rem;
+    padding: 0;
     z-index: 200;
+  }
+
+  #navbar .logo {
+    margin-left: 1rem;
   }
 
   #navbar .nav-navbar {
@@ -564,6 +584,7 @@ body {
 
   #navbar .menu {
     margin-left: -1rem;
+    margin-right: 1.5rem;
     display: inline-block !important;
   }
 
@@ -573,8 +594,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 15% 0 0 10%;
-    opacity: 0.9;
+    padding: 15% 0 5% 10%;
   }
 
   #hero {
@@ -617,6 +637,10 @@ body {
     text-align: center;
   }
 
+  #products .comp .comp-desc {
+    padding: 0;
+  }
+
   #products .comp,
   #products .product-strength-1,
   #products .product-strength-2 {
@@ -627,7 +651,11 @@ body {
     margin: 0 1rem 0 1rem;
     min-height: 75vh;
     background-color: #f44c7f;
-    background-image: url("/assets/img/bg_twas.webp"), url("/assets/img/dvl_back.webp"), url("/assets/img/vector-get-started-1.webp"), url("/assets/img/vector-get-started-2.webp"), url("/assets/img/vector-get-started-3.webp");
+    background-image: url("/assets/img/bg_twas.webp"),
+      url("/assets/img/dvl_back.webp"),
+      url("/assets/img/vector-get-started-1.webp"),
+      url("/assets/img/vector-get-started-2.webp"),
+      url("/assets/img/vector-get-started-3.webp");
     background-repeat: no-repeat;
     background-position: center 20%, 50% 120%, top left, 120% 40%, center 125%;
     background-size: 70%, 90%, 30%, 30%, 30%;
